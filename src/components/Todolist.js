@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Todolist = () => {
-  const hendleSubmit = (event) => {
-    event.preventDefault();
+  const [item, setItem] = useState();
+
+  const onChange = (event) => {
+    console.log(event.preventDefault);
+    setItem(event.preventDefault);
   };
   return (
-    <form onSubmit={(event) => hendleSubmit(event)}>
-      <input></input>
+    <form>
+      <input value={item} onChange={onChange} />
       <bottom>add</bottom>
     </form>
   );
