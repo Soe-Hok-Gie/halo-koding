@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import List from "./List";
 
 const Todolist = () => {
   const [currentItem, setCurrentItem] = useState();
@@ -13,10 +14,14 @@ const Todolist = () => {
     setCurrentItem("");
   };
   return (
-    <form>
-      <input value={currentItem} onChange={onChangeValue} />
-      <bottom onClick={addItemList}>add</bottom>
-    </form>
+    <div>
+      <form>
+        <input value={currentItem} onChange={onChangeValue} />
+        <bottom onClick={addItemList}>add</bottom>
+      </form>
+
+      <List />
+    </div>
   );
 };
 
