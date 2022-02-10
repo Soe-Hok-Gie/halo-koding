@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 
 const Todolist = () => {
-  const [item, setItem] = useState();
+  const [currentItem, setCurrentItem] = useState();
+  const [itemList, UpdateItemList] = useState([]);
 
   const onChangeValue = (event) => {
-    setItem(event.preventDefault);
+    setCurrentItem(event.target.value);
   };
 
-  const addItemList = () => {};
+  const addItemList = () => {
+    UpdateItemList([...itemList, { item: currentItem, key: Date.now() }]);
+    setCurrentItem("");
+  };
   return (
     <form>
-      <input value={item} onChange={onChangeValue} />
+      <input value={currentItem} onChange={onChangeValue} />
       <bottom onClick={addItemList}>add</bottom>
     </form>
   );
