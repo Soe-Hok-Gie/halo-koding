@@ -20,7 +20,7 @@ const Todolist = () => {
         <bottom onClick={addItemList}>add</bottom>
       </form>
 
-      <List />
+      <List itemList={itemList} />
     </div>
   );
 };
