@@ -1,5 +1,6 @@
 import React from "react";
 import BelajarBinding from "./components/BelajarBinding";
+import LogicBinding from "./components/LogicBinding";
 import Todolist from "./components/Todolist";
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <div>
       <Todolist />
       <BelajarBinding />
+      <LogicBinding />
     </div>
   );
 };
