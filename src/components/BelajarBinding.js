@@ -7,7 +7,7 @@ const BelajarBinding = () => {
     <div className="App">
       <header className="App-header"></header>
 
-      <input type="text" className="text" placeholder="type here" onChange={(typing) => typing.target.value} />
+      <input type="text" className="text" placeholder="type here" onChange={(typing) => setText(typing.target.value)} />
     </div>
   );
 };
