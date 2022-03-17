@@ -2,8 +2,12 @@ import React, { useState, useEffect } from "react";
 
 const LogicBinding = () => {
   const [text, setText] = useState("");
+
   const [showImage, setshowImage] = useState(false);
-  useEffect(() => {}, []);
+
+  useEffect(() => {
+    // text == "poem" ? setshowImage(true) : setshowImage(false)
+  }, [text]);
 
   return (
     <div className="App">
