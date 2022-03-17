@@ -6,7 +6,7 @@ const LogicBinding = () => {
   const [showImage, setshowImage] = useState(false);
 
   useEffect(() => {
-    // text == "poem" ? setshowImage(true) : setshowImage(false)
+    text == "poem" ? setshowImage(true) : setshowImage(false);
   }, [text]);
 
   return (
