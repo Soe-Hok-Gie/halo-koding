@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const LogicBinding = () => {
+  const [text, setText] = useState("");
   return (
     <div className="App">
       <header className="App-header"></header>
