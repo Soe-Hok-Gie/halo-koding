@@ -6,8 +6,8 @@ import Todolist from "./components/Todolist";
 const App = () => {
   return (
     <div>
-      <Todolist />
-      <BelajarBinding />
+      {/* <Todolist />
+      <BelajarBinding /> */}
       <LogicBinding />
     </div>
   );
