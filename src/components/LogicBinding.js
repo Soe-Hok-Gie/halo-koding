@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 const LogicBinding = () => {
   const [text, setText] = useState("");
+  const [showImage, setshowImage] = useState(false);
+
   return (
     <div className="App">
       <header className="App-header"></header>
