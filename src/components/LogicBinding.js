@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const LogicBinding = () => {
   const [text, setText] = useState("");
   const [showImage, setshowImage] = useState(false);
+
+  useEffect(() => {}, []);
 
   return (
     <div className="App">
