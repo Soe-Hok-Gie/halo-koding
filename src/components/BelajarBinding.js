@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 const BelajarBinding = () => {
-  return <div>BelajarBinding</div>;
+  const [text, setText] = useState("");
+
+  return (
+    <div className="App">
+      <header className="App-header"></header>
+
+      <input type="text" className="text" placeholder="type here" />
+    </div>
+  );
 };
 
 export default BelajarBinding;
