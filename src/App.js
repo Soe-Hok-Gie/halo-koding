@@ -1,8 +1,14 @@
 import React from "react";
+import BelajarBinding from "./components/BelajarBinding";
 import Todolist from "./components/Todolist";
 
 const App = () => {
-  return <Todolist />;
+  return (
+    <div>
+      <Todolist />
+      <BelajarBinding />
+    </div>
+  );
 };
 
 export default App;
