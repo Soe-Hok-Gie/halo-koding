@@ -10,9 +10,9 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routes>
-          <Todolist />
-          <BelajarBinding />
-          <LogicBinding />
+          <Route path="/todolist" element={<Todolist />} />
+          <Route path="/belajarbinding" element={<BelajarBinding />} />
+          <Route path="/logicbinding" element={<LogicBinding />} />
         </Routes>
       </BrowserRouter>
     </>
