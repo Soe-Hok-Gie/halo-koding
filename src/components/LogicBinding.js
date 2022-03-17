@@ -4,8 +4,6 @@ const LogicBinding = () => {
   const [text, setText] = useState("");
   const [showImage, setshowImage] = useState(false);
 
-  useEffect(() => {}, []);
-
   return (
     <div className="App">
       <header className="App-header"></header>
