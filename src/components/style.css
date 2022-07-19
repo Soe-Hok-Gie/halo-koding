@@ -1,0 +1,93 @@
+.topbar {
+  width: 100%;
+  height: 70px;
+  background-color: whitesmoke;
+  color: teal;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  transition: all 1s ease;
+}
+.wrapper {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right.humburger {
+  width: 32px;
+  height: 25px;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.right.span {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  transform-origin: left;
+  transition: all 2s ease;
+}
+
+.right.humburger:active {
+  background-color: black;
+  color: whitesmoke;
+}
+/* .right span:active { */
+:first-child {
+  background-color: whitesmoke;
+  transform: rotate(45deg);
+}
+:nth-child(2) {
+  opacity: 0;
+}
+
+:last-child {
+  background-color: whitesmoke;
+  transform: rotate(-45deg);
+}
+
+/* menu */
+
+.menu {
+  width: 300px;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+}
+.menu:active {
+  right: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 300;
+  color: whitesmoke;
+  width: 60%;
+}
+
+li {
+  margin-bottom: 20px;
+}
+a {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  font-weight: 500;
+}
